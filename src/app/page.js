@@ -11,9 +11,7 @@ export default function Home() {
   
   return (
     <div id="home">
-    
       <header>
-        
         <h1>
           BIRD'S EYE REVIEW
         </h1>
