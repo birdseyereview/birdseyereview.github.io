@@ -1,0 +1,77 @@
+* { margin:0; padding:0; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, monospace;
+  color: black;
+
+  width: 100%;
+  height: fit-content;
+  background-color: var(--background-color);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  --rounding: 15px;
+
+  --background-color: #F5F5F5;
+  --secondary-background-color: #D3D3D3;
+  --primary-color: black;
+  --primary-text-color: black;
+  --url-color: #7393B3;
+
+  --xl-gap: 40px;
+  --lg-gap: 20px;
+  --md-gap: 10px;
+  --sm-gap: 5px;
+
+  --md-text: 16px;
+  --sm-text: 14px;
+  --xs-text: 10px;
+}
+
+body > div {
+  width: 800px;
+  @media screen and (max-width: 780px) {
+    padding: 0px var(--xl-gap);
+  }
+}
+
+a {
+  color:var(--primary-text-color);
+  text-decoration: none;
+}
+a:visited { color:var(--primary-text-color); }
+a:focus { text-decoration: underline; color:var(--primary-text-color); }
+
+button {
+  > .back {
+    height: 100%;
+    width: auto;
+
+    height: 40px;
+    background-color: var(--background-color);
+    color: black;
+    border-radius: var(--rounding);
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    padding: 8px 12px;
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h5 {
+  font-weight: 300;
+}

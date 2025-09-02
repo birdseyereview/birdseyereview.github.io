@@ -1,0 +1,28 @@
+#home {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--xl-gap) * 2);
+
+  margin-top: calc(var(--xl-gap) * 2);
+}
+
+#home {
+  a {
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+  }
+}
+
+#home {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--lg-gap)
+  }
+}
